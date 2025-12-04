@@ -9,8 +9,6 @@
 
 # Summary (500–1000 words)
 
-_(You will fill this section with your narrative. Use your status report + notebook outputs.)_
-
 ---
 
 # Data Profile (500–1000 words)
@@ -72,7 +70,7 @@ Examples:
 ### 1. Clone the repo
 
 ```bash
-git clone <your_repo_url>
+git clone <https://github.com/aayanv05/eThiAl-IS477.git>
 cd is477-project
 ```
 
