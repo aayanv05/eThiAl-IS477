@@ -1,0 +1,18 @@
+{
+  "titles": [{"title": "Evolution of Musical Characteristics in Popular Spotify Tracks"}],
+  "creators": [{"name": "Aayan Verma"}, {"name": "Tarini Patel"}],
+  "publisher": "University of Illinois Urbana-Champaign",
+  "publicationYear": 2025,
+  "resourceType": {"resourceTypeGeneral": "Dataset"},
+  "descriptions": [
+    {
+      "description": "Analysis of audio characteristics of popular Spotify tracks using multi-source curated datasets.",
+      "descriptionType": "Abstract"
+    }
+  ],
+  "rightsList": [
+    {
+      "rights": "Educational, non-commercial use only. Original Spotify data subject to Spotify and Kaggle terms."
+    }
+  ]
+}
