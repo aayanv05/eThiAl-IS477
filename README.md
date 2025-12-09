@@ -204,7 +204,7 @@ decade_trends.py corresponds to Path("results/figures/decade/")
 
 de_popularity_distributions.py corresponds to Path("results/figures/distributions/")
 
-rf_feature_importance.py are in corresponds to Path("results/figures/ml/rf_feature_importance.png")
+rf_feature_importance.py corresponds to Path("results/figures/ml/rf_feature_importance.png")
 
 # References
 
