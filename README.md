@@ -42,7 +42,7 @@ All track metadata is publicly accessible via Kaggle or generated via Spotify AP
 Copyrighted audio is not distributed; only metadata and derived numerical attributes are included.
 All uses comply with Kaggle dataset licenses and Spotify’s Developer Terms.
 
-Licensing Notes
+Licensing Notes:
 Kaggle datasets follow Creative Commons licensing requiring attribution.
 Spotify metadata must not be redistributed for commercial use.
 
@@ -81,7 +81,7 @@ Once missingness and data type issues were identified, we applied a structured c
 4. **Categorical Validation**:
    Key, mode, and time_signature were validated against known categories. Any entries outside Spotify’s defined classes were flagged and addressed via imputation, removal, or category normalization.
 
-These cleaning steps produced a streamlined, structurally consistent dataset suitable for cross-decade comparisons and predictive modeling.
+These cleaning steps produced a streamlined and consistent dataset suitable for cross-decade comparisons and predictive modeling.
 
 ### **Validity Checks**
 
@@ -197,25 +197,19 @@ jupyter notebook notebooks/is477project.ipynb
 ```
 
 ### 6: Script Path
-All the files in results/figures/ml path come from this script:
+All the files in results/figures/ml path come from this script: 
 
-# Correlation Barplot (ML) - compute_correlations.py
-IN = Path("data/final/merged_features.csv")
+### compute_correlations.py are in 
 OUT = Path("results/figures/ml/correlation_barplot.png")
 
-# Decade-Level Figures - decade_trends.py
-IN = Path("data/final/merged_features.csv")
+### decade_trends.py are in 
 OUT_DIR = Path("results/figures/decade/")
 
-# Distribution Plots - kde_popularity_distributions.py
-IN = Path("data/final/merged_features.csv")
+### de_popularity_distributions.py are in
 OUT_DIR = Path("results/figures/distributions/")
 
-# Random Forest Feature Importance (ML) - fr_feature_importance.py
-IN = Path("data/final/merged_features.csv")
+### rf_feature_importance.py are in
 OUT = Path("results/figures/ml/rf_feature_importance.png")
-
----
 
 # References
 
