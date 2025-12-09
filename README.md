@@ -21,7 +21,10 @@ Overall, the project highlights that musical attributes do evolve consistently o
 Datasets Used
 1. High-Popularity Spotify Dataset
 Shape: 1,686 tracks, 28 columns
+
 Source: Kaggle (Maharshi Pandya “Spotify Tracks Dataset”)
+
+
 Contains detailed audio features (energy, danceability, valence, etc.), popularity scores, release dates, and metadata.
 
 2. Full Spotify Dataset (Universe Dataset)
