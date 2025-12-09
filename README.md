@@ -5,7 +5,7 @@
 - Aayan Verma
 - Tarini Patel
 
-# Summary (500–1000 words)
+# Summary 
 This project explores how the sonic fabric of popular music has shifted over time by analyzing two complementary Spotify datasets: a curated high-popularity subset and a broader 114k-track Spotify universe. The goal is to understand what audio features correlate with popularity, how those features evolve across decades, and whether machine learning can meaningfully predict a track’s success using only its acoustic signature.
 After loading, inspecting, and profiling both datasets, we standardized their schema, derived temporal variables (year and decade), and merged them for comparison. The high-popularity dataset spans 1,686 tracks with 28 columns, while the full dataset contains 113,999 tracks and 24 columns. This size difference provides a useful distinction: the HP dataset reflects what becomes popular, while the larger dataset captures the full spectrum of Spotify’s archive.
 
@@ -16,7 +16,7 @@ To test whether popularity is predictable, we trained a simple baseline classifi
 
 Overall, the project highlights that musical attributes do evolve consistently over time, and some features show mild associations with popularity. However, audio features alone cannot fully explain why certain songs resonate globally while others disappear into the streaming void. This insight paves the way for future work incorporating lyrical sentiment, playlist exposure, and network effects from social media virality.
 
-# Data Profile (500–1000 words)
+# Data Profile 
 
 Datasets Used
 1. High-Popularity Spotify Dataset
@@ -45,7 +45,7 @@ Spotify metadata must not be redistributed for commercial use.
 **Download datasets from Box and place in:**  
 `data/cleaned/`
 
-# Data Quality (500–1000 words)
+# Data Quality 
 
 Ensuring data quality was a central component of our analysis, particularly because the two datasets we integrated—the “Hit Parade” curated subset and the larger Spotify track dataset—were collected from different sources, contained heterogeneous formats, and represented music spanning nearly a century. This section outlines our procedures for assessing missingness, cleaning and validating fields, enforcing consistent ranges, and acknowledging the limitations that remain after processing.
 
@@ -96,7 +96,7 @@ Despite extensive cleaning, several inherent limitations remain. Spotify’s pop
 
 These limitations do not invalidate our analyses but do shape the interpretability of long-term musical trends and predictive models.
 
-# Findings (~500 words)
+# Findings
 
 Our analysis uncovered several key insights about musical evolution, audio characteristics, and their relationship to popularity on Spotify. By examining feature correlations, decade-level summaries, and a baseline machine learning model, we identified consistent structural patterns in how music has changed over time and how listeners engage with it. While audio features alone cannot fully explain popularity, they provide meaningful clues about broader cultural and production trends.
 
@@ -118,7 +118,7 @@ Overall, the 2020s exhibit high values across several dimensions: danceability (
 To explore whether audio features can predict popularity, we implemented a baseline machine learning classifier using the cleaned dataset. Overall predictive performance was modest, confirming that musical success on Spotify is influenced by far more than acoustic profiles. Nonetheless, certain features consistently ranked higher in importance—specifically loudness, energy, and danceability—indicating that engaging, high-energy songs tend to fare better on average.
 The model’s limitations echo the broader correlation findings: popularity is not an inherent property of the audio signal. Instead, it emerges from cultural dynamics, playlist placement, social media trends, artist branding, and Spotify’s recommendation ecosystem. Machine learning results ultimately reinforce that while audio features contribute to listener perception, they represent only one layer of a much larger hit-making process.
 
-# Future Work (500–1000 words)
+# Future Work
 
 While the current analysis provides a strong foundation for understanding long-term musical evolution and the relationship between audio features and popularity, there are several key areas where deeper, more advanced analyses would significantly enhance the project’s scope and insight. Future work should focus on expanding the dataset beyond acoustic features, incorporating lyrical content, applying modern unsupervised clustering techniques, experimenting with more sophisticated machine learning models, and integrating external cultural signals that influence musical success. Additionally, longitudinal modeling would help reveal how songs rise and fall in popularity over time.
 
