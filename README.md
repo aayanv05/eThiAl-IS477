@@ -5,8 +5,6 @@
 - Aayan Verma
 - Tarini Patel
 
----
-
 # Summary (500–1000 words)
 This project explores how the sonic fabric of popular music has shifted over time by analyzing two complementary Spotify datasets: a curated high-popularity subset and a broader 114k-track Spotify universe. The goal is to understand what audio features correlate with popularity, how those features evolve across decades, and whether machine learning can meaningfully predict a track’s success using only its acoustic signature.
 After loading, inspecting, and profiling both datasets, we standardized their schema, derived temporal variables (year and decade), and merged them for comparison. The high-popularity dataset spans 1,686 tracks with 28 columns, while the full dataset contains 113,999 tracks and 24 columns. This size difference provides a useful distinction: the HP dataset reflects what becomes popular, while the larger dataset captures the full spectrum of Spotify’s archive.
@@ -17,7 +15,6 @@ Decade-level trends were particularly revealing. From the 1960s to the 2020s, da
 To test whether popularity is predictable, we trained a simple baseline classifier distinguishing “popular” vs “not popular” tracks using core audio features. Performance was modest. This aligns with expectations: popularity is a social and algorithmic construct, shaped by playlisting, virality, and cultural context as much as by sound. Still, some features—loudness, energy, danceability—demonstrated higher feature importance scores, reinforcing their role in modern hit-making.
 
 Overall, the project highlights that musical attributes do evolve consistently over time, and some features show mild associations with popularity. However, audio features alone cannot fully explain why certain songs resonate globally while others disappear into the streaming void. This insight paves the way for future work incorporating lyrical sentiment, playlist exposure, and network effects from social media virality.
----
 
 # Data Profile (500–1000 words)
 
@@ -29,7 +26,7 @@ Contains detailed audio features (energy, danceability, valence, etc.), populari
 
 2. Full Spotify Dataset (Universe Dataset)
 Shape: 113,999 tracks, 24 columns
-Source: Kaggle (600k Spotify tracks; subset filtered during cleaning)
+Source: Kaggle (114k Spotify tracks; subset filtered during cleaning)
 Contains broader track metadata with extensive artist coverage and genre labels.
 
 Data Sources, Storage, & Access
@@ -47,8 +44,6 @@ Spotify metadata must not be redistributed for commercial use.
 
 **Download datasets from Box and place in:**  
 `data/cleaned/`
-
----
 
 # Data Quality (500–1000 words)
 
@@ -101,8 +96,6 @@ Despite extensive cleaning, several inherent limitations remain. Spotify’s pop
 
 These limitations do not invalidate our analyses but do shape the interpretability of long-term musical trends and predictive models.
 
----
-
 # Findings (~500 words)
 
 Our analysis uncovered several key insights about musical evolution, audio characteristics, and their relationship to popularity on Spotify. By examining feature correlations, decade-level summaries, and a baseline machine learning model, we identified consistent structural patterns in how music has changed over time and how listeners engage with it. While audio features alone cannot fully explain popularity, they provide meaningful clues about broader cultural and production trends.
@@ -124,7 +117,6 @@ Overall, the 2020s exhibit high values across several dimensions: danceability (
 3. Predicting Popularity
 To explore whether audio features can predict popularity, we implemented a baseline machine learning classifier using the cleaned dataset. Overall predictive performance was modest, confirming that musical success on Spotify is influenced by far more than acoustic profiles. Nonetheless, certain features consistently ranked higher in importance—specifically loudness, energy, and danceability—indicating that engaging, high-energy songs tend to fare better on average.
 The model’s limitations echo the broader correlation findings: popularity is not an inherent property of the audio signal. Instead, it emerges from cultural dynamics, playlist placement, social media trends, artist branding, and Spotify’s recommendation ecosystem. Machine learning results ultimately reinforce that while audio features contribute to listener perception, they represent only one layer of a much larger hit-making process.
----
 
 # Future Work (500–1000 words)
 
@@ -199,6 +191,25 @@ This produces:
 jupyter notebook notebooks/is477project.ipynb
 ```
 
+### 6: Script Path
+All the files in results/figures/ml path come from this script:
+
+# Correlation Barplot (ML) - compute_correlations.py
+IN = Path("data/final/merged_features.csv")
+OUT = Path("results/figures/ml/correlation_barplot.png")
+
+# Decade-Level Figures - decade_trends.py
+IN = Path("data/final/merged_features.csv")
+OUT_DIR = Path("results/figures/decade/")
+
+# Distribution Plots - kde_popularity_distributions.py
+IN = Path("data/final/merged_features.csv")
+OUT_DIR = Path("results/figures/distributions/")
+
+# Random Forest Feature Importance (ML) - fr_feature_importance.py
+IN = Path("data/final/merged_features.csv")
+OUT = Path("results/figures/ml/rf_feature_importance.png")
+
 ---
 
 # References
@@ -208,8 +219,6 @@ jupyter notebook notebooks/is477project.ipynb
 - Python: pandas, numpy, scikit-learn, seaborn, matplotlib
 - Snakemake Workflow Engine
 - IS 477 Course Materials
-
----
 
 # Contribution Statement
 
