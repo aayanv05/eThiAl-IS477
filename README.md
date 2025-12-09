@@ -29,7 +29,9 @@ Contains detailed audio features (energy, danceability, valence, etc.), populari
 
 2. Full Spotify Dataset (Universe Dataset)
 Shape: 113,999 tracks, 24 columns
+
 Source: Kaggle (114k Spotify tracks; subset filtered during cleaning)
+
 Contains broader track metadata with extensive artist coverage and genre labels.
 
 Data Sources, Storage, & Access
