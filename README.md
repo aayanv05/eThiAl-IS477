@@ -198,17 +198,13 @@ jupyter notebook notebooks/is477project.ipynb
 
 ### 6: Script Path
 
-### compute_correlations.py are in 
-OUT = Path("results/figures/ml/correlation_barplot.png")
+ compute_correlations.py corresponds to Path("results/figures/ml/correlation_barplot.png")
 
-### decade_trends.py are in 
-OUT_DIR = Path("results/figures/decade/")
+decade_trends.py corresponds to Path("results/figures/decade/")
 
-### de_popularity_distributions.py are in
-OUT_DIR = Path("results/figures/distributions/")
+de_popularity_distributions.py corresponds to Path("results/figures/distributions/")
 
-### rf_feature_importance.py are in
-OUT = Path("results/figures/ml/rf_feature_importance.png")
+rf_feature_importance.py are in corresponds to Path("results/figures/ml/rf_feature_importance.png")
 
 # References
 
