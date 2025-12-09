@@ -1,0 +1,55 @@
+{
+  "@type": "dcat:Catalog",
+  "dataset": [
+
+    {
+      "@type": "dcat:Dataset",
+      "title": "Spotify Music Dataset (solomonameh/spotify-music-dataset)",
+      "identifier": "spotify-dataset-solomonameh",
+      "description": "A dataset of Spotify music metadata and audio features — includes track and song attributes, genres, popularity, and metadata. Source: Kaggle dataset by solomonameh.",
+      "keyword": ["spotify", "music", "audio features", "song metadata", "tracks", "Kaggle"],
+      "accessLevel": "public",
+      "accrualPeriodicity": "R/P1Y",
+      "modified": "2025-12-09",
+      "publisher": {
+        "name": "solomonameh (Kaggle)"
+      },
+      "contactPoint": {
+        "fn": "solomonameh"
+      },
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "accessURL": "https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset",
+          "downloadURL": "https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset/download?datasetVersionNumber=1",
+          "mediaType": "application/zip"
+        }
+      ]
+    },
+
+    {
+      "@type": "dcat:Dataset",
+      "title": "Spotify Tracks Dataset (maharshipandya/spotify-tracks-dataset)",
+      "identifier": "spotify-dataset-maharshipandya",
+      "description": "A dataset of Spotify track metadata — includes audio features, track details, and music attributes. Source: Kaggle dataset by maharshipandya.",
+      "keyword": ["spotify", "music", "tracks", "audio features", "metadata", "Kaggle"],
+      "accessLevel": "public",
+      "accrualPeriodicity": "R/P1Y",
+      "modified": "2025-12-09",
+      "publisher": {
+        "name": "maharshipandya (Kaggle)"
+      },
+      "contactPoint": {
+        "fn": "maharshipandya"
+      },
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "accessURL": "https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset",
+          "downloadURL": "https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/download?datasetVersionNumber=1",
+          "mediaType": "application/zip"
+        }
+      ]
+    }
+  ]
+}
