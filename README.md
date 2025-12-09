@@ -197,7 +197,6 @@ jupyter notebook notebooks/is477project.ipynb
 ```
 
 ### 6: Script Path
-All the files in results/figures/ml path come from this script: 
 
 ### compute_correlations.py are in 
 OUT = Path("results/figures/ml/correlation_barplot.png")
