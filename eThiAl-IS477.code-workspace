@@ -1,29 +1,10 @@
 {
 	"folders": [
 		{
-			"name": "eThiAl-IS477",
 			"path": "."
 		},
 		{
-			"name": "data",
-			"path": "../../../Desktop/IS477Project/data"
-		},
-		{
-			"name": "metadata",
-			"path": "../../../Desktop/IS477Project/metadata"
-		},
-		{
-			"name": "notebooks",
-			"path": "../../../Desktop/IS477Project/notebooks"
-		},
-		{
-			"name": "results",
-			"path": "../../../Desktop/IS477Project/results"
-		},
-		{
-			"name": "scripts",
-			"path": "../../../Desktop/IS477Project/scripts"
+			"path": "."
 		}
-	],
-	"settings": {}
+	]
 }
