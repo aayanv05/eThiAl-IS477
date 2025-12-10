@@ -46,7 +46,7 @@ Licensing Notes:
 Kaggle datasets follow Creative Commons licensing requiring attribution.
 Spotify metadata must not be redistributed for commercial use.
 
-The datasets could not be tracked to the primary source
+The datasets could not be tracked to the primary source.
 
 
 **Download datasets from Box and place in:**  
